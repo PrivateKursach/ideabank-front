@@ -10,19 +10,19 @@ function routing($stateProvider, $urlRouterProvider) {
     var loginState = {
         name: "login",
         url: "/login",
-        component: "tpLogin"
+        component: "ibLogin"
     };
 
     var registrationState = {
         name: "registration",
         url: "/registration",
-        component: "tpRegistration"
+        component: "ibRegistration"
     };
 
     var requestListState = {
         name: "requestList",
         url: "/requests?page",
-        component: "requestList",
+        component: "ibRequestList",
         params: {
             page: {
                 value: '1',

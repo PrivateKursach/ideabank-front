@@ -1,0 +1,13 @@
+<form>
+    <div class="inputsContainer clear custom-form-container">
+        <div class="item">
+            <input type="text" class="custom-form-input" placeholder="Электроннная почта" ng-model="$ctrl.loginForm.email">
+        </div>
+        <div class="item">
+            <input type="password" class="custom-form-input" placeholder="Пароль" ng-model="$ctrl.loginForm.password">
+        </div>
+        <p>
+            <input type="submit" value="Войти" ng-click="$ctrl.login()">
+        </p>
+    </div>
+</form>

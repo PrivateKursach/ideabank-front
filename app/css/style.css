@@ -1006,3 +1006,11 @@ footer .socialLinks a:hover {
 .padding205 {
     padding-left: 205px;
 }
+.custom-form-input {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+.custom-form-container {
+    margin-bottom: 30px;
+}

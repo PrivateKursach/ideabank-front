@@ -17,16 +17,14 @@
     <div class="wrapper">
         <div class="formBlock">
             <p class="title">Добро пожаловать</p>
-            <form id="" action="https://webs.ideabank.by:45444/api/Site/req" method="post" onsubmit="yaCounter26299515.reachGoal('otpravka_zayvka'); return true;">
+            <form>
                 <div class="inputsContainer clear">
                     <p>
                         <input ng-if="$cltr.isLogged()" type="submit" value="Отправить заявку на участие в конкурсе" class="">
                         <input ng-if="$cltr.isLogged()" type="submit" value="Выйти" class="">
-                        <input ng-if="!$cltr.isLogged()" type="submit" value="Вход" class="">
+                        <input ng-if="!$cltr.isLogged()" type="submit" value="Вход" ng-click="$ctrl.redirectToLogin()">
                         <input ng-if="!$cltr.isLogged()" type="submit" value="Регистрация" class="">
                     </p>
-                    <input name="BDirection" type="hidden" value="133" />
-                    <input name="_m29" type="hidden" value="" />
                 </div>
             </form>
         </div>

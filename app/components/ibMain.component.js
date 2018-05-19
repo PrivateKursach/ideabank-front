@@ -27,4 +27,8 @@ function MainController($rootScope, $cookies, $state) {
     $ctrl.isAdmin = function () {
         return $rootScope.sessionUserRole == 0;
     };
+
+    $ctrl.redirectToLogin = function () {
+        $state.go("login");
+    };
 }
