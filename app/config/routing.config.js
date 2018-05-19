@@ -18,6 +18,12 @@ function routing($stateProvider, $urlRouterProvider) {
         url: "/registration",
         component: "ibRegistration"
     };
+    
+    var createRequestState = {
+        name: "createRequest",
+        url: "/request",
+        component: "createRequest"
+    };
 
     var requestListState = {
         name: "requestList",
@@ -34,5 +40,6 @@ function routing($stateProvider, $urlRouterProvider) {
     $stateProvider.state(welcomeState);
     $stateProvider.state(registrationState);
     $stateProvider.state(loginState);
+    $stateProvider.state(createRequestState);
     $stateProvider.state(requestListState);
 }

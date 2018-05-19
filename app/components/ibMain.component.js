@@ -34,5 +34,9 @@ function MainController($rootScope, $cookies, $state) {
 
     $ctrl.redirectToRegistration = function () {
         $state.go("registration");
-    }
+    };
+    
+    $ctrl.redirectToRequest = function () {
+        $state.go("createRequest");
+    };
 }
