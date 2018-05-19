@@ -1,0 +1,53 @@
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="img/logo.png" alt="Идея банк">
+        </div>
+        <div class="infoBlock">
+            <div class="text">Работаем для Вас<br>более 10 лет</div>
+            <div class="orderCallBlock">
+                <a href="tel:375296010099" class="tel">(+375-29) 601-00-99</a>
+                <a href="https://promo.ideabank.by/depozit/#" class="orderCallLink js_orderCall">Заказать обратный звонок</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="afterHeader afterHeader-deposit">
+    <div class="wrapper">
+        <div class="formBlock">
+            <p class="title">Добро пожаловать</p>
+            <form id="" action="https://webs.ideabank.by:45444/api/Site/req" method="post" onsubmit="yaCounter26299515.reachGoal('otpravka_zayvka'); return true;">
+                <div class="inputsContainer clear">
+                    <p>
+                        <input ng-if="$cltr.isLogged()" type="submit" value="Отправить заявку на участие в конкурсе" class="">
+                        <input ng-if="$cltr.isLogged()" type="submit" value="Выйти" class="">
+                        <input ng-if="!$cltr.isLogged()" type="submit" value="Вход" class="">
+                        <input ng-if="!$cltr.isLogged()" type="submit" value="Регистрация" class="">
+                    </p>
+                    <input name="BDirection" type="hidden" value="133" />
+                    <input name="_m29" type="hidden" value="" />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<br>
+
+<ui-view></ui-view>
+
+<footer>
+    <div class="wrapper">
+        <div class="copyright">
+            <p>© 2017 ЗАО "Идея Банк"<br>Лицензия НБРБ №25 от 03.06.2013 г.</p>
+        </div>
+        <div class="logos">
+            <img src="img/logos.png" alt="">
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/ideabankbusiness/" target="_blank"><img src="img/facebook.png" alt=""></a>
+            <a href="http://vk.com/ideabankby" target="_blank"><img src="img/vk.png" alt=""></a>
+            <a href="mailto:info@ideabank.by"><img src="img/mail.png" alt=""></a>
+        </div>
+    </div>
+</footer>

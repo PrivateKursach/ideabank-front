@@ -1,0 +1,80 @@
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url('fonts/Myriad-Regular/MyriadPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url('fonts/Myriad-Bold/MyriadPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url('fonts/Myriad-SemiBold/MyriadPro-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.afterHeader.afterHeader-deposit {
+    height: 555px;
+    background: #d1eafb url("../img/main-bg.jpg") center top no-repeat;
+}
+
+.ui-slider .ui-slider-handle {
+    background: url("../img/polzun_icon.png") left top no-repeat;
+}
+
+.calcContainer:after {
+    content: url("../img/calc-shadow.png");
+    text-align: center;
+}
+
+.fancybox-overlay {
+    background: url('../img/fancybox_overlay.png');
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('../img/fancybox_sprite.png');
+}
+
+.sliderContainer .marker_big {
+    background: url('../img/polzun_marker_big.png') left top no-repeat;
+}
+
+.sliderContainer .marker_small {
+    background: url('../img/polzun_marker_small.png') left top no-repeat;
+}
+
+.sliderContainer .ui-slider-podlozka {
+    background: url('../img/polzun_podlozka.png') left top no-repeat;
+}
+
+.advantages li {
+    list-style-image: url("../img/reddot.png");
+}
+
+.calcContainer .calcBlock {
+    min-height: 230px;
+}
+
+.calcContainer .resultBlock {
+    min-height: 260px;
+}
+
+.calcContainer .sliderContainer {
+    padding: 53px 0 30px;
+}
+
+.advantages {
+    height: 603px;
+    width: 100%;
+    background: url("../img/reasons-bg.jpg") center top no-repeat;
+}
+
+input[type="submit"] {
+    font-family: "Myriad Pro",sans-serif;
+}
