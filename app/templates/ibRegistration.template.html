@@ -1,0 +1,26 @@
+<form>
+    <div class="inputsContainer clear custom-form-container">
+        <p class="title">
+            Регистрация
+        </p>
+        <div class="item">
+            <p class="label">Имя</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.registrationForm.firstName">
+        </div>
+        <div class="item">
+            <p class="label">Фамилия</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.registrationForm.lastName">
+        </div>
+        <div class="item">
+            <p class="label">Электронная почта</p>
+            <input type="email" class="custom-form-input" ng-model="$ctrl.registrationForm.email">
+        </div>
+        <div class="item">
+            <p class="label">Пароль</p>
+            <input type="password" class="custom-form-input" ng-model="$ctrl.registrationForm.password">
+        </div>
+        <p>
+            <input type="submit" value="Регистрация" ng-click="$ctrl.register()">
+        </p>
+    </div>
+</form>

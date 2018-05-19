@@ -23,7 +23,7 @@
                         <input ng-if="$cltr.isLogged()" type="submit" value="Отправить заявку на участие в конкурсе" class="">
                         <input ng-if="$cltr.isLogged()" type="submit" value="Выйти" class="">
                         <input ng-if="!$cltr.isLogged()" type="submit" value="Вход" ng-click="$ctrl.redirectToLogin()">
-                        <input ng-if="!$cltr.isLogged()" type="submit" value="Регистрация" class="">
+                        <input ng-if="!$cltr.isLogged()" type="submit" value="Регистрация" ng-click="$ctrl.redirectToRegistration()">
                     </p>
                 </div>
             </form>

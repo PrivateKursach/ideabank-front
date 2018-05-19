@@ -1007,10 +1007,28 @@ footer .socialLinks a:hover {
     padding-left: 205px;
 }
 .custom-form-input {
-    display: block;
-    width: 50%;
-    margin: 10px auto;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 .custom-form-container {
-    margin-bottom: 30px;
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+}
+.custom-form-container .label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e06287;
+    line-height: 1.2em;
+}
+.custom-form-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e06287;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }

@@ -1,10 +1,15 @@
 <form>
     <div class="inputsContainer clear custom-form-container">
+        <p class="title">
+            Вход
+        </p>
         <div class="item">
-            <input type="text" class="custom-form-input" placeholder="Электроннная почта" ng-model="$ctrl.loginForm.email">
+            <p class="label">Электронная почта</p>
+            <input type="email" class="custom-form-input" ng-model="$ctrl.loginForm.email">
         </div>
         <div class="item">
-            <input type="password" class="custom-form-input" placeholder="Пароль" ng-model="$ctrl.loginForm.password">
+            <p class="label">Пароль</p>
+            <input type="password" class="custom-form-input" ng-model="$ctrl.loginForm.password">
         </div>
         <p>
             <input type="submit" value="Войти" ng-click="$ctrl.login()">
