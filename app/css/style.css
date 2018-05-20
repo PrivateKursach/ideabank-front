@@ -1060,3 +1060,31 @@ footer .socialLinks a:hover {
     line-height: 1.2em;
     margin-bottom: 20px;
 }
+.request-button {
+    width: 280px;
+    height: 55px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #e06287;
+    -webkit-box-shadow: 0 1px #004a6a, inset 0 1px #fc626a;
+    -moz-box-shadow: 0 1px #004a6a, inset 0 1px #fc626a;
+    box-shadow: 0 1px #004a6a, inset 0 1px #fc626a;
+    background-image: -webkit-linear-gradient(top, rgba(255,33,58,.25), rgba(96,0,0,.25));
+    background-image: -moz-linear-gradient(top, rgba(255,33,58,.25), rgba(96,0,0,.25));
+    background-image: -o-linear-gradient(top, rgba(255,33,58,.25), rgba(96,0,0,.25));
+    background-image: linear-gradient(to bottom, rgba(255,33,58,.25), rgba(96,0,0,.25));
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    display: inline; !important;
+    margin: 10px auto; !important;
+}

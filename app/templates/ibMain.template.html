@@ -20,7 +20,7 @@
             <form>
                 <div class="inputsContainer clear">
                     <p>
-                        <input ng-if="$ctrl.isLogged()" type="submit" value="Отправить заявку" ng-click="$ctrl.redirectToRequest()">
+                        <input ng-if="$ctrl.isLogged() && !$ctrl.isAdmin()" type="submit" value="Отправить заявку" ng-click="$ctrl.redirectToRequest()">
                         <input ng-if="$ctrl.isLogged()" type="submit" value="Список заявок" ng-click="$ctrl.redirectToRequestList()">
                         <input ng-if="$ctrl.isLogged()" type="submit" value="Выйти" ng-click="$ctrl.logout()">
                         <input ng-if="!$ctrl.isLogged()" type="submit" value="Вход" ng-click="$ctrl.redirectToLogin()">

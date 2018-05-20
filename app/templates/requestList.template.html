@@ -3,6 +3,6 @@
     <h4><a class="label" ui-sref="request({ requestId: request.id})">Заявка № {{ request.id }}</a></h4>
     <p>Пользователь: {{ request.user.firstName }} {{ request.user.lastName }}</p>
     <p>Статус: {{ request.status | requestStatusFilter }}</p>
-    <input type="submit" value="Принять заявку" ng-if="$ctrl.isAdmin()" ng-click="$ctrl.approveRequest(request)">
-    <input type="submit" value="Отклонить заявку" ng-if="$ctrl.isAdmin()" ng-click="$ctrl.rejectRequest(request)">
+    <button class="request-button" ng-if="$ctrl.isAdmin() && request.status != 2" ng-click="$ctrl.approveRequest(request)">Принять заявку</button>
+    <button class="request-button" ng-if="$ctrl.isAdmin() && request.status != 1" ng-click="$ctrl.rejectRequest(request)">Отклонить заявку</button>
 </div>
