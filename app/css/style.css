@@ -1041,10 +1041,22 @@ footer .socialLinks a:hover {
     font-weight: 300;
     line-height: 1.2em;
     box-shadow: 0 8px 12px -6px #cbcccb;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .label {
     font-size: 18px;
     font-weight: bold;
     color: #e06287;
     line-height: 1.2em;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e06287;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }
