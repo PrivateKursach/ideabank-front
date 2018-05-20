@@ -3,6 +3,7 @@
         <p class="title">
             Вход
         </p>
+        <p class="error-message" ng-if="$ctrl.authorizationError">Ошибка авторизации</p>
         <div class="item">
             <p class="label">Электронная почта</p>
             <input type="email" class="custom-form-input" ng-model="$ctrl.loginForm.email">

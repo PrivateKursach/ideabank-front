@@ -1088,3 +1088,11 @@ footer .socialLinks a:hover {
     display: inline; !important;
     margin: 10px auto; !important;
 }
+.error-message {
+    font-size: 12px;
+    font-weight: bold;
+    color: #e06287;
+    text-align: center;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}

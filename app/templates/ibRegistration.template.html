@@ -1,23 +1,41 @@
-<form>
+<form name="registration">
     <div class="inputsContainer clear custom-form-container">
         <p class="title">
             Регистрация
         </p>
         <div class="item">
             <p class="label">Имя</p>
-            <input type="text" class="custom-form-input" ng-model="$ctrl.registrationForm.firstName">
+            <input type="text" class="custom-form-input" name="first_name" ng-model="$ctrl.registrationForm.firstName">
         </div>
         <div class="item">
             <p class="label">Фамилия</p>
-            <input type="text" class="custom-form-input" ng-model="$ctrl.registrationForm.lastName">
+            <input type="text" class="custom-form-input" name="last_name" ng-model="$ctrl.registrationForm.lastName">
         </div>
         <div class="item">
             <p class="label">Электронная почта</p>
-            <input type="email" class="custom-form-input" ng-model="$ctrl.registrationForm.email">
+            <input type="email" class="custom-form-input" name="email" ng-model="$ctrl.registrationForm.email" ng-minlength="6" ng-maxlength="100" required>
+            <p class="error-message" ng-show="registration.email.$touched && registration.email.$error.required">
+                Электронная почта обязательна для заполнения
+            </p>
+            <p class="error-message" ng-show="registration.email.$touched && registration.email.$error.minlength">
+                Минимальная длина электронной почты 6 символов
+            </p>
+            <p class="error-message" ng-show="registration.email.$touched && registration.email.$error.maxlength">
+                Максимальная длина электронной почты 100 символов
+            </p>
         </div>
         <div class="item">
             <p class="label">Пароль</p>
-            <input type="password" class="custom-form-input" ng-model="$ctrl.registrationForm.password">
+            <input type="password" class="custom-form-input" name="password" ng-model="$ctrl.registrationForm.password" ng-minlength="6" ng-maxlength="100" required>
+            <p class="error-message" ng-show="registration.password.$touched && registration.password.$error.required">
+                Пароль обязателен для заполнения
+            </p>
+            <p class="error-message" ng-show="registration.password.$touched && registration.password.$error.minlength">
+                Минимальная длина пароля 6 символов
+            </p>
+            <p class="error-message" ng-show="registration.password.$touched && registration.password.$error.maxlength">
+                Максимальная длина пароля 100 символов
+            </p>
         </div>
         <p>
             <input type="submit" value="Регистрация" ng-click="$ctrl.register()">

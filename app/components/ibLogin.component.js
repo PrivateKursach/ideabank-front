@@ -13,6 +13,8 @@ function LoginController(sessionService, $rootScope, $cookies, $state) {
             $rootScope.sessionUserId = sessionData.id;
             $rootScope.sessionUserRole = sessionData.role;
             $state.go("welcome");
+        }, function (errorResponse) {
+            $ctrl.authorizationError = true;
         });
     };
 }
