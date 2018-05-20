@@ -9,7 +9,11 @@
         </div>
         <div class="item">
             <p class="label">Возраст</p>
-            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionAge">
+            <select class="custom-form-input" ng-model="$ctrl.request.questionAge">
+                <option>18-25</option>
+                <option>25-35</option>
+                <option>>35</option>
+            </select>
         </div>
         <div class="item">
             <p class="label">Место проживания</p>
@@ -37,11 +41,19 @@
         </div>
         <div class="item">
             <p class="label">За какой срок Вы планируете воплотить свою идею в жизнь?</p>
-            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionTerm">
+            <select class="custom-form-input" ng-model="$ctrl.request.questionTerm">
+                <option>3 месяца-пол года</option>
+                <option>пол года-год</option>
+                <option>> года</option>
+            </select>
         </div>
         <div class="item">
             <p class="label">Какая денежная сумма Вам нужна для старта своего бизнеса?</p>
-            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionMoney">
+            <select class="custom-form-input" ng-model="$ctrl.request.questionMoney">
+                <option>до $5000</option>
+                <option>$5000 -10000</option>
+                <option>> $10000</option>
+            </select>
         </div>
         <div class="item">
             <p class="label">На какую поддержку Вы рассчитываете в ходе проекта?</p>

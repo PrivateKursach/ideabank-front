@@ -1032,3 +1032,19 @@ footer .socialLinks a:hover {
     line-height: 1.2em;
     margin-bottom: 20px;
 }
+.request {
+    background-color: #f0f0f0;
+    padding: 25px 45px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 300;
+    line-height: 1.2em;
+    box-shadow: 0 8px 12px -6px #cbcccb;
+}
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e06287;
+    line-height: 1.2em;
+}
