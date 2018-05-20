@@ -9,4 +9,5 @@ angular.module("app", ["ngCookies", "ui.router", "ui.bootstrap"])
     .component("ibLogin", ibLoginComponent)
     .component("ibRegistration", ibRegistrationComponent)
     .component("createRequest", createRequestComponent)
-    .component("requestList", requestListComponent);
+    .component("requestList", requestListComponent)
+    .component("request", requestComponent);

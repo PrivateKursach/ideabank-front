@@ -39,4 +39,8 @@ function MainController($rootScope, $cookies, $state) {
     $ctrl.redirectToRequest = function () {
         $state.go("createRequest");
     };
+
+    $ctrl.redirectToRequestList = function () {
+        $state.go("requestList");
+    };
 }

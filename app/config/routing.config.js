@@ -27,14 +27,14 @@ function routing($stateProvider, $urlRouterProvider) {
 
     var requestListState = {
         name: "requestList",
-        url: "/requests?page",
-        component: "ibRequestList",
-        params: {
-            page: {
-                value: '1',
-                squash: true
-            }
-        }
+        url: "/requests",
+        component: "requestList"
+    };
+
+    var requestState = {
+        name: "request",
+        url: "/request/{requestId}",
+        component: "request"
     };
 
     $stateProvider.state(welcomeState);
@@ -42,4 +42,5 @@ function routing($stateProvider, $urlRouterProvider) {
     $stateProvider.state(loginState);
     $stateProvider.state(createRequestState);
     $stateProvider.state(requestListState);
+    $stateProvider.state(requestState);
 }

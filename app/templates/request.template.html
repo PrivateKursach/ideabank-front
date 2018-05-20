@@ -1,0 +1,66 @@
+<form>
+    <div class="inputsContainer clear custom-form-container">
+        <p class="title">
+            Заявка
+        </p>
+        <div class="item">
+            <p class="label">ФИО</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionFio" readonly>
+        </div>
+        <div class="item">
+            <p class="label">Возраст</p>
+            <select class="custom-form-input" ng-model="$ctrl.request.questionAge" disabled>
+                <option>18-25</option>
+                <option>25-35</option>
+                <option>>35</option>
+            </select>
+        </div>
+        <div class="item">
+            <p class="label">Место проживания</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionAddress" readonly>
+        </div>
+        <div class="item">
+            <p class="label">Мобильный телефон</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionPhone" readonly>
+        </div>
+        <div class="item">
+            <p class="label">Электронная почта</p>
+            <input type="text" class="custom-form-input" ng-model="$ctrl.request.questionEmail" readonly>
+        </div>
+        <div class="item">
+            <p class="label">Почему Вы решили участвовать в этом конкурсе?</p>
+            <textarea class="custom-form-input" ng-model="$ctrl.request.questionReason" rows="5" readonly></textarea>
+        </div>
+        <div class="item">
+            <p class="label">В какой сфере бизнеса Вы бы хотели себя реализовать?</p>
+            <textarea class="custom-form-input" ng-model="$ctrl.request.questionArea" rows="5" readonly></textarea>
+        </div>
+        <div class="item">
+            <p class="label">В чём состоит уникальность Вашей бизнес-идеи?</p>
+            <textarea class="custom-form-input" ng-model="$ctrl.request.questionUnique" rows="5" readonly></textarea>
+        </div>
+        <div class="item">
+            <p class="label">За какой срок Вы планируете воплотить свою идею в жизнь?</p>
+            <select class="custom-form-input" ng-model="$ctrl.request.questionTerm" disabled>
+                <option>3 месяца-пол года</option>
+                <option>пол года-год</option>
+                <option>> года</option>
+            </select>
+        </div>
+        <div class="item">
+            <p class="label">Какая денежная сумма Вам нужна для старта своего бизнеса?</p>
+            <select class="custom-form-input" ng-model="$ctrl.request.questionMoney" disabled>
+                <option>до $5000</option>
+                <option>$5000 -10000</option>
+                <option>> $10000</option>
+            </select>
+        </div>
+        <div class="item">
+            <p class="label">На какую поддержку Вы рассчитываете в ходе проекта?</p>
+            <textarea class="custom-form-input" ng-model="$ctrl.request.questionSupport" rows="5" readonly></textarea>
+        </div>
+        <p>
+            <input type="submit" value="Отправить" ng-click="$ctrl.createRequest()">
+        </p>
+    </div>
+</form>

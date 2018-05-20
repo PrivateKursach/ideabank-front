@@ -1,5 +1,5 @@
 <div class="request" ng-repeat="request in $ctrl.requestList">
-    <h4 class="label"><a>Заявка № {{ request.id }}</a></h4>
+    <h4 class="label"><a ui-sref="request({ requestId: request.id})">Заявка № {{ request.id }}</a></h4>
     <p>Пользователь: {{ request.user.firstName }} {{ request.user.lastName }}</p>
     <p>Статус: {{ request.status | requestStatusFilter }}</p>
     <p>Создан: {{ request.dateCreated | date:'fullDate' }}</p>
